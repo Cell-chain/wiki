@@ -1,8 +1,8 @@
-# How to be a CELL's miner
+# How to be a CELL miner
 
 The CELL Network test net uses proof-of-activity mining system to generate proofs of workload about time periods for the revenue through Zero-knowledge Proof Techniques
 
-## Download the CELL's mining app
+## Download the CELL mining app
 
 Ubuntu 18.04
 
@@ -11,12 +11,6 @@ wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell
 chmod +x ./cell
 ```
 
-check the verson:
-```sh
-./cell --version
-```
-Make sure the output is `version 0.4.0-f8889ab`;
-
 Window(PowerShell)
 
 ```PowerShell
@@ -24,6 +18,11 @@ wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell-win.exe -o
 ```
 
 > ! Note: The directory comes with the parameter files to start the program: download the param.bin and witness.bin files.
+> ! Note: check the verson:
+```sh
+./cell --version
+```
+Make sure the output is `version 0.4.0-f8889ab`;
 
 ## Download the proof parameter file
 
