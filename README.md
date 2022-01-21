@@ -18,6 +18,7 @@ wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell-win.exe -o
 ```
 
 > ! Note: The directory comes with the parameter files to start the program: download the param.bin and witness.bin files.
+
 > ! Note: check the verson:
 ```sh
 ./cell --version
