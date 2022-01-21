@@ -7,14 +7,20 @@ The CELL Network test net uses proof-of-activity mining system to generate proof
 Ubuntu 18.04
 
 ```sh
-wget https://github.com/Cell-chain/wiki/releases/download/v0.3.1/cell
+wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell
 chmod +x ./cell
 ```
+
+check the verson:
+```sh
+./cell --version
+```
+Make sure the output is `version 0.4.0-f8889ab`;
 
 Window(PowerShell)
 
 ```PowerShell
-wget https://github.com/Cell-chain/wiki/releases/download/v0.3.1/cell-win.exe -o cell.exe
+wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell-win.exe -o cell.exe
 ```
 
 > ! Note: The directory comes with the parameter files to start the program: download the param.bin and witness.bin files.
@@ -71,6 +77,11 @@ Where Secret seed needed to pass in the node is started.
 
 ## Start the node
 
+>! Note: If you have ran v0.3.1, delete historical sync data with the following command: 
+```sh
+./cell purge-chain -y
+```
+
 After preparing the parameter file and account, please start the node mining.
 The following command starts the mining node.
 
@@ -81,7 +92,7 @@ The following command starts the mining node.
 The following output indicates that it is booting normally.
 
 ```txt
-version 0.3.1-9501e12-x86_64-linux-gnu
+version 0.4.0-f8889ab-x86_64-linux-gnu
 Chain specification: Cell Testnet
 Node name: feeble-expansion-6681
 Role: FULL
