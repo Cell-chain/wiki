@@ -4,6 +4,7 @@ The CELL Network test net uses proof-of-activity mining system to generate proof
 
 ## Download the CELL mining app
 
+You 
 Ubuntu 18.04
 
 ```sh
@@ -75,6 +76,25 @@ Secret phrase `trouble dial maple found milk elite stamp horror cruel tonight im
 
 Where Secret seed needed to pass in the node is started.
 
+## Get some test coins
+
+Let's get some test coins with the following command:
+
+```bash
+curl 'http://bot.celllab.io/coin/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd'
+```
+or visit https://faucet.celllab.io/ to receive your test tokens.
+
+Please replace `5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd` with your address, wait for transaction completed.
+
+Check whether the coin is received:
+
+```bash
+curl 'http://bot.celllab.io/balance/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd'
+```
+
+or visit http://apps.celllab.io/ to check your balance of test tokens
+
 ## Start the node
 
 >! Note: If you have ran v0.3.1, delete historical sync data with the following command: 
@@ -114,4 +134,85 @@ The sample:
 ./cell --base-path=/mnt/node1 --miner <seed1>
 ./cell --base-path=/mnt/node2 --miner <seed2>
 ./cell --base-path=/mnt/node3 --miner <seed3>
+```
+
+## The mining instruction set:
+
+1. *Cell* is the required mining executable program.(windows default is cell-win.exe)
+2. *curl*,*wget* are file transfer tools that work under command.
+3. *tail* is a text viewer.
+
+
+* Start synchronous nodes (no mining):
+```
+cell
+```
+
+* Set the storage address of the node:
+```
+cell --base-path=<path>
+```
+
+* Custom bootnode:
+```
+cell --bootnodes=/ip4/127.0.0.1/tcp/30333/p2p/12D3KooWPJMiEvJ35ads69T4zVAVvihYwqvsA3HwPG47xhFPpUXQ
+```
+
+* Set the P2P port:
+```
+cell --port=30333
+```
+
+* Clear the node data:
+```
+cell purge-chain -y
+```
+
+* Create account command:
+```
+cell key generate
+```
+
+* Download mining parameters:
+```
+cell zkp --params
+```
+
+* Start mining:(change to your own address after minner)
+```
+cell --miner 0x6ad0f5894dfd1d50f0cd5a169bd34c498905709c4efb62085c18b9e0d668f4ac
+```
+
+* Get test tokens:
+1. visit https://faucet.celllab.io/ to receive your test tokens
+2. (change to your own address after /)
+```
+curl http://bot.celllab.io/coin/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd
+```
+
+* View the balance of test tokens:
+1. visit http://apps.celllab.io/ to check your balance of test tokens
+2. (change to your own address after /)
+```
+curl http://bot.celllab.io/balance/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd
+```
+
+* Background start command:
+```
+nohup ./cell 2>&1 >> cell.log &
+```
+
+* View logs:
+```
+tail -f cell.log
+```
+
+* View cell process PID:
+```
+ps -e | grep cell
+```
+
+* Stop mining:
+```
+kill -9 [pid]
 ```
