@@ -11,6 +11,12 @@ Ubuntu 18.04
 wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell
 chmod +x ./cell
 ```
+For Ubuntu 20.04 Install first libssl1.0.0
+
+```sh
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.7_amd64.deb
+sudo apt install ./libssl1.0.0_1.0.2n-1ubuntu5.7_amd64.deb
+```
 
 Window(PowerShell)
 
