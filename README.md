@@ -137,9 +137,9 @@ By setting `--base-path` and creating multiple accounts, you can start multiple 
 The sample:
 
 ```sh
-./cell --base-path=/mnt/node1 --miner <seed1>
-./cell --base-path=/mnt/node2 --miner <seed2>
-./cell --base-path=/mnt/node3 --miner <seed3>
+./cell --port=30333 --base-path=/mnt/node1 --miner <seed1>
+./cell --port=30334 --base-path=/mnt/node2 --miner <seed2>
+./cell --port=30335 --base-path=/mnt/node3 --miner <seed3>
 ```
 
 ## The mining instruction set:
