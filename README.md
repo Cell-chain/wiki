@@ -197,7 +197,7 @@ curl http://bot.celllab.io/coin/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd
 ```
 
 * View the balance of test tokens:
-1. visit http://apps.celllab.io/ to check your balance of test tokens
+1. visit http://wallet.celllab.io/ to check your balance of test tokens
 2. (change to your own address after /)
 ```
 curl http://bot.celllab.io/balance/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd
