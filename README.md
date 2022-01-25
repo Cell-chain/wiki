@@ -99,7 +99,7 @@ Check whether the coin is received:
 curl 'http://bot.celllab.io/balance/5FyHCb1T4tAMCFci2YhikhtwNBC87usTWmGiGyfdrZtL1Ynd'
 ```
 
-or visit http://apps.celllab.io/ to check your balance of test tokens
+or visit http://wallet.celllab.io/ to check your balance of test tokens
 
 ## Start the node
 
