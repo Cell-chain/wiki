@@ -8,7 +8,7 @@ You
 Ubuntu 18.04
 
 ```sh
-wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell
+wget https://github.com/Cell-chain/wiki/releases/download/v0.4.1/cell
 chmod +x ./cell
 ```
 For Ubuntu 20.04 Install first libssl1.0.0
@@ -21,7 +21,7 @@ sudo apt install ./libssl1.0.0_1.0.2n-1ubuntu5.7_amd64.deb
 Window(PowerShell)
 
 ```PowerShell
-wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell-win.exe -o cell.exe
+wget https://github.com/Cell-chain/wiki/releases/download/v0.4.1/cell-win.exe -o cell.exe
 ```
 
 > ! Note: The directory comes with the parameter files to start the program: download the param.bin and witness.bin files.
@@ -30,7 +30,7 @@ wget https://github.com/Cell-chain/wiki/releases/download/v0.4.0/cell-win.exe -o
 ```sh
 ./cell --version
 ```
-Make sure the output is `version 0.4.0-f8889ab`;
+Make sure the output is `version 0.4.1-d3b5664`;
 
 ## Download the proof parameter file
 
@@ -118,12 +118,12 @@ The following command starts the mining node.
 The following output indicates that it is booting normally.
 
 ```txt
-version 0.4.0-f8889ab-x86_64-linux-gnu
+version 0.4.1-d3b5664-x86_64-linux-gnu
 Chain specification: Cell Testnet
 Node name: feeble-expansion-6681
 Role: FULL
 Database: RocksDb at /home/miner/
-Native runtime: cell_testnet-100 (cell_testnet-1.tx1.au1)
+Native runtime: cell_testnet-101 (cell_testnet-1.tx1.au1)
 Local node identity is: 12D3KooWG13Tz3i3aZyggHXHtnotiFUJEcRhGb2oYF4ShujQrzog
 Highest known block at #0
 Prometheus server started at 127.0.0.1:9615
